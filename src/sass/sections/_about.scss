@@ -20,7 +20,7 @@
 
   .about-wrapper {
     @include respond(phone) {
-      padding-bottom: 5rem;
+      padding-bottom: 2rem;
     }
 
     &__image {
@@ -40,6 +40,7 @@
     &__info {
       display: flex;
       height: 100%;
+      align-items: center;
       justify-content: center;
       flex-direction: column;
 
@@ -58,9 +59,9 @@
         }
 
         &--important {
-          background: darken($secondary-color, 1%);
+          // background: darken($secondary-color, 1%);
           display: inline-block;
-          font-style: italic;
+          // font-style: italic;
           padding: 0 0.3rem;
           margin: 0.3rem 0;
           line-height: 1.6;
@@ -73,6 +74,12 @@
             font-style: normal;
           }
         }
+      }
+      &-resume {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
